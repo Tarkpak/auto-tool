@@ -1,0 +1,33 @@
+[
+  {
+    "AppName": "Visual Studio Code",
+    "ProcessName": "Code",
+    "Language": "en-US",
+    "IsEnabled": true
+  },
+  {
+    "AppName": "微信",
+    "ProcessName": "WeChat",
+    "Language": "zh-CN",
+    "IsEnabled": true
+  },
+  {
+    "AppName": "Google Chrome",
+    "ProcessName": "chrome",
+    "Language": "en-US",
+    "IsEnabled": true
+  },
+  {
+    "AppName": "Microsoft Word",
+    "ProcessName": "WINWORD",
+    "Language": "zh-CN",
+    "IsEnabled": true
+  },
+  {
+    "AppName": "Notepad++",
+    "ProcessName": "notepad++",
+    "Language": "en-US",
+    "IsEnabled": true
+  }
+]
+
