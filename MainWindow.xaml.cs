@@ -28,6 +28,13 @@ namespace toggle_lang
         {
             InitializeComponent();
             InitializeApp();
+
+            // 如果是静默启动（开机自启动），则不显示窗口
+            if (App.IsSilentStartup)
+            {
+                Hide();
+                WindowState = WindowState.Minimized;
+            }
         }
 
         private void InitializeApp()
@@ -499,7 +506,8 @@ namespace toggle_lang
                     var exePath = System.Diagnostics.Process.GetCurrentProcess().MainModule?.FileName;
                     if (!string.IsNullOrEmpty(exePath))
                     {
-                        key.SetValue("ToggleLang", $"\"{exePath}\"");
+                        // 添加 --silent 参数，使开机自启动时后台运行
+                        key.SetValue("ToggleLang", $"\"{exePath}\" --silent");
                     }
                 }
                 else
